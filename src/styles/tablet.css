@@ -1,0 +1,7 @@
+@media (max-width: 1200px) {
+  .header {
+    & .side-block:has(.logo-link) {
+      display: none;
+    }
+  }
+}

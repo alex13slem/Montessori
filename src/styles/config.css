@@ -1,0 +1,10 @@
+:root {
+  font-family: var(--sans-serif);
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 1200px;
+  min-width: 320px;
+  width: 100%;
+}

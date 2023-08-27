@@ -1,15 +1,115 @@
 ---
+import '../styles/index.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Монтессори</title>
+  </head>
+  <body>
+    <input type="checkbox" id="burger-nav--cb" />
+    <header class="header">
+      <div class="side-block">
+        <a href="" class="logo-link">
+          <img
+            width="260"
+            height="65"
+            src=`http://montessori.ee/wp-content/uploads/2019/12/Logo-name-black-2.png`
+            alt="Интернациональная Монтессори школа"
+          />
+        </a>
+      </div>
+      <button class="burger-btn">
+        <label for="burger-nav--cb">
+          <svg
+            class="onClose"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512"
+            ><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            ></path></svg
+          >
+          <svg
+            class="onOpen"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 384 512"
+            ><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            ></path></svg
+          >
+        </label>
+      </button>
+      <nav class="nav">
+        <a class="link" href="history">История</a>
+        <a class="link" href="grops">Группы</a>
+        <a class="link" href="teachers">Педагоги</a>
+        <a class="link" href="about">Монтессори</a>
+        <a class="link" href="prices">Цены</a>
+        <a class="link" href="news">Новости</a>
+      </nav>
+      <div class="side-block">
+        <a class="link blue" href="#">Заказать обратный звонок</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <img
+            src="https://www.tarklaps.ee/images/headers/Montessori-Lastekeskus-Header-With-Logo.png"
+            alt="Main banner"
+          />
+          <div class="hand-cards">
+            <div class="hand-card blue">
+              <img
+                src="https://www.tarklaps.ee/images/hand_blue_3.png"
+                width="100px"
+              />
+              <p>Помоги мне сделать это <span>самому!</span></p>
+            </div>
+            <div class="hand-card green">
+              <img
+                src="https://www.tarklaps.ee/images/hand_green.png"
+                width="100px"
+              />
+              <p>Помоги мне сделать это <span>самому!</span></p>
+            </div>
+            <div class="hand-card pink">
+              <img
+                src="https://www.tarklaps.ee/images/hand_pink.png"
+                width="100px"
+              />
+              <p>Помоги мне сделать это <span>самому!</span></p>
+            </div>
+            <div class="hand-card orange">
+              <img
+                src="https://www.tarklaps.ee/images/hand_orange_2.png"
+                width="100px"
+              />
+              <p>Помоги мне сделать это <span>самому!</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="burger-nav" id="burger-nav--wrap">
+      <nav class="nav">
+        <a class="link" href="history">История</a>
+        <a class="link" href="grops">Группы</a>
+        <a class="link" href="teachers">Педагоги</a>
+        <a class="link" href="about">Монтессори</a>
+        <a class="link" href="prices">Цены</a>
+        <a class="link" href="news">Новости</a>
+      </nav>
+    </div>
+  </body>
 </html>

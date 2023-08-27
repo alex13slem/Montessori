@@ -1,0 +1,5 @@
+section.hero {
+  & .container {
+    padding: var(--p);
+  }
+}

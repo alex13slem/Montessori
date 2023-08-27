@@ -1,0 +1,15 @@
+:root {
+  --pb: 1ex;
+  --pi: 1ch;
+  --p: var(--pb) var(--pi);
+
+  --sans-serif: 'Inter', sans-serif;
+  --cursive: 'Caveat', cursive;
+
+  --main-color: #ecf6fb;
+  --main-color-h: #ecf6fbb9;
+  --acc-color: #8571ea;
+  --acc-color-h: #8f79ffea;
+
+  --bxsh-onFocus: 0 0 0 2px var(--acc-color-h);
+}
